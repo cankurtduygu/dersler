@@ -1,0 +1,33 @@
+body{
+    /* background-image: linear-gradient(to right,purple,blue); */
+}
+
+.box1{
+    /* background-color: tomato; */
+    background-color: #FF0000;
+}
+
+.box2{
+    background-color: lime;
+    background-color: #0000FFAC;
+}
+
+.box3{
+    background-color: rgba(199, 205, 20, 0.971);
+}
+
+.box4{
+    background-color: rgb(0, 0, 255, 0.5);
+
+}
+
+.box5{
+    background-color: rgb(0, 255, 0);
+    background-color: #69D8D1;
+}
+
+.box6{
+    /* background-color: rgb(50, 150, 120); */
+    background-color: hsl(240, 100%, 50%);
+    background-color: #146C39;
+}

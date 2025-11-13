@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.content {
+    border: 1px solid;
+}
+
+.content1 {
+    background-color: gray;
+    grid-area: 2/1/4/2;
+
+    & p {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    & input {
+        /* width: 100%; */
+        border-radius: 10px;
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+
+    & select {
+        width: 100%;
+        margin-top: 10px;
+        
+    }
+}
+
+.content2 {
+    background-color: khaki;
+    grid-area: 1/2/3/4;
+    background-image: url("https://picsum.photos/id/78/600/400");
+    background-size: cover;
+}
+
+.content3 {
+    background-color: rgba(240, 230, 140, 0.589);
+    grid-area: 2/3/3/4;
+}
+
+.content4 {
+    background-color: magenta;
+    grid-area: 1/4/3/6;
+    background-image: url("https://picsum.photos/id/79/600/400");
+    background-size: cover;
+}
+
+.content5 {
+    background-color: rgba(119, 119, 119, 0.616);
+    grid-area: 2/5/3/6;
+}

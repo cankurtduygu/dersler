@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        background-color: gray;
+        margin: 0 auto;
+      }
+      .formBaslik {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              FORM ELEMENT                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <table>
+      <tr class="formBaslik">
+        <td><img src="./images/avatar.jpg" alt="" /></td>
+        <td>PERSONEL TANIMA FORMU</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <form action="result.html">
+            <div>
+              <label for="ad">Adınız:</label>
+              <input
+                type="text"
+                id="ad"
+                name="Ad"
+                placeholder="Adınızı giriniz"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label for="soyad">Soyadınız:</label>
+              <input type="text" id="soyad" name="Soyad" />
+            </div>
+            <br />
+            <div>
+              <label for="sifre">Şifre:</label>
+              <input type="password" name="Sifre" id="sifre" />
+            </div>
+            <br />
+            <!-- ------------------------------------ -->
+            <div>
+              <label for="">Cinsiyetiniz:</label>
+              <br />
+
+              <input type="radio" name="cinsiyet" id="kadin" value="Kadın" />
+              <label for="kadin">Kadın</label>
+
+              <br />
+              <input
+                type="radio"
+                name="cinsiyet"
+                id="erkek"
+                value="Erkek"
+                checked
+              />
+              <label for="erkek">Erkek</label>
+            </div>
+            <br />
+            <!-- ----------------------------------------------------------------->
+            <label for="">Müsait Olduğunuz Günler:</label>
+            <br />
+            <input type="checkbox" name="MusaitGun" id="Cuma" value="Cuma" />
+            <label for="Cuma">Cuma</label>
+            <br />
+            <input
+              type="checkbox"
+              name="MusaitGun"
+              id="Cumartesi"
+              value="Cumartesi"
+            />
+            <label for="Cumartesi">Cumartesi</label>
+            <br />
+            <input type="checkbox" name="MusaitGun" id="Pazar" value="Pazar" />
+            <label for="Pazar">Pazar</label>
+
+            <br />
+            <!-- ----------------------------------------------------------------------- -->
+            <br />
+            <div>
+              <label for="yas">Yaşınız:</label>
+              <input type="number" name="yas" id="yas" min="18" max="50" />
+            </div>
+            <br />
+            <!-- ----------------------------------------------------------------------- -->
+            <div>
+              <label for="renk">Sevdiğiniz Renk:</label>
+              <input type="color" name="Renk" id="" />
+            </div>
+            <br />
+            <!-- ----------------------------------------------------------------------- -->
+            <label for="dogumTarihi">Doğum Tarihinizi Girin:</label> <br />
+            <input
+              type="date"
+              name="Dtarihi"
+              id="dogumTarihi"
+              min="2025-01-01"
+              max="2026-01-01"
+              step="2"
+              value="2025-10-24"
+            />
+            <br>
+            <!-- ----------------------------------------------------------------------- -->
+             <br>
+            <div>
+                <label for="email">E-Postanızı Giriniz:</label><br>
+                <input type="email" name="email" id="email">
+             </div>
+             <br>
+             <!-- ----------------------------------------------------------------------- -->
+
+             <div>
+                <label for="fotograf">Fotografınızı Yükleyin</label>
+                <br>
+                <input type="file" name="Fotograf" id="">
+             </div>
+            <!-- ----------------------------------------------------------------------- -->
+             <br>
+             <div>
+                <label for="tel">Telefon Numaranız:</label>
+                <br>
+                <input type="tel" name="Telefon" id="tel" pattern="^\+90[0-9]{10}$" placeholder="+90XXXXXXXX">
+             </div>
+
+
+
+
+
+           <!-- ---------------------------------------------------------->
+            <br /><br />
+            <div>
+              <input type="submit" value="KAYDET" />
+              <input type="reset" value="FORMU TEMİZLE" />
+            </div>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

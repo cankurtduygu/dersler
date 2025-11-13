@@ -1,0 +1,61 @@
+/*! Grup selectors */
+
+/* .container p { */
+div p {
+    background-color: crimson;
+}
+p.p1{
+    color:yellow;
+}
+
+section p{
+    color:gray;
+}
+
+div > p{ /* parent ı div olan p yani sadece child p ler */
+    background-color: purple;
+}
+div + p {
+    /* div den sonra gelen ilk p */
+    background-color: orange;
+}
+
+.box2 + p{
+    font-size:3rem;
+}
+
+div ~ p {
+
+/* div den sonra gelen tüm p ler */
+
+    font-weight: 900;
+}
+
+/*! Attribute selector */
+
+
+h2[title="baslik1"]{
+
+background-color: yellow;
+
+
+}
+h2{
+    background-color: green;
+}
+
+a[target="_blank"]{
+
+    text-decoration: none;
+    font-size: 2rem;
+    border:2px solid red;
+    background-color: chartreuse;
+
+}
+
+p[title="p1"]::first-letter{
+    font-size: 3rem;
+}
+p[title="p1"]::first-line{
+    color:red;
+}

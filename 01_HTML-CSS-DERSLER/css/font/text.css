@@ -1,0 +1,16 @@
+h1{
+    color:red;
+    text-align: center;
+
+}
+
+#par1{
+    color:blue;
+    text-align:center;
+    font: size 20px;
+    text-shadow:5px 10px 5px red;
+
+    column-count: 4;
+
+    column-rule:3px solid red;
+}

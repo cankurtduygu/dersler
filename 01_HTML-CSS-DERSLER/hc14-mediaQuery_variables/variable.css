@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+:root {
+    /* colors */
+    --color-bg: #cdb4dbff;
+    --color-primary: #ffc8ddff;
+    --color-secondary: #ffafccff;
+    --color-blue: #bde0feff;
+    --color-sky-blue: #a2d2ffff;
+
+    /* font families */
+    --ff-asimovian: "Asimovian";
+
+    /* font families */
+    --fs-xs: 0.6rem;
+    --fs-sm: 0.8rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 2rem;
+
+}
+

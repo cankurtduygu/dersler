@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">NET<span>FLIX</span></h1>
+
+        <h3 class="description">
+          Thank you for signing up at Netflix.Tell us more about yourself
+        </h3>
+      </header>
+
+      <div class="survey_form">
+        <form action="result.html">
+          <div class="input-box">
+            <label for="name">Name</label> <br />
+            <input
+              id="name"
+              placeholder="enter your name"
+              required
+              type="text"
+              name="Name"
+            />
+          </div>
+          <div class="input-box">
+            <label for="age">Age</label> <br />
+            <input
+              id="age"
+              placeholder="enter your age"
+              required
+              type="number"
+              name="age"
+            />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label> <br />
+            <input
+              id="email"
+              placeholder="enter your email"
+              required
+              type="email"
+              name="email"
+            />
+          </div>
+          <div class="input-box">
+            <label for="content">Content Type</label> <br />
+            <select name="Content" id="">
+              <option value="film">Movie</option>
+              <option value="seriler">Series</option>
+            </select>
+          </div>
+
+<!-- CHECKBOX -->
+
+          <div class="input-box">
+            <label for=""> Movie Type</label>
+            <br />
+
+            <input
+              id="comedy"
+              name="Movie Type"
+              value="komedi"
+              type="checkbox"
+            />
+            <label for="comedy">Comedy</label> <br />
+
+            <input
+              id="action"
+              name="Movie Type"
+              value="aksiyon"
+              type="checkbox"
+            />
+            <label for="action">Action</label> <br />
+
+            <input
+              id="romance"
+              name="Movie Type"
+              value="romantik"
+              type="checkbox"
+            />
+            <label for="romance">Romance</label> <br />
+          </div>
+
+
+<!-- -------- -->
+
+<!-- RADIO -->
+<div class="input-box">
+            <label for=""> Gender</label>
+            <br />
+
+            <input
+              id="female"
+              name="Gender"
+              value="Kadın"
+              type="radio"
+            />
+            <label for="female">Female</label> <br />
+
+            <input
+              id="male"
+              name="Gender"
+              value="erkek"
+              type="radio"
+            />
+            <label for="male">Male</label> <br />
+
+            <input
+              id="other"
+              name="Gender"
+              value="Diğer"
+              type="radio"
+            />
+            <label for="other">Other</label> <br />
+          </div>
+
+
+
+<!-- ----- -->
+
+<!-- COMMENT -->
+<div class="input-box">
+<label for="feedback"></label>
+
+<textarea name="Feedback" id="feedback" placeholder="any comment"></textarea>
+
+</div>
+
+
+<!-- ----- -->
+
+<!-- SUBMIT -->
+<div class="form-submit">
+    <button  type="submit">Gönder</button>
+</div>
+
+
+<!-- ----- -->
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

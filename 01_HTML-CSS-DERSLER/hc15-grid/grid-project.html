@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/grid-project.css">
+    <title>CSS GRID Project - Blog Layout</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h1>CSS Grid Blog</h1>
+        <p>Grid ozellikleri ile olusturulmus modern layout</p>
+      </header>
+
+      <aside class="aside">
+        <h3>Kategoriler</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+
+        <div class="aside-info">
+          <h4>Grid Ozellikleri</h4>
+          <p>Bu proje sunlari kullaniyor</p>
+          <ul>
+            <li>grid-template-rows</li>
+            <li>grid-template-columns</li>
+            <li>repeat()</li>
+            <li>minmax()</li>
+            <li>gap</li>
+            <li>auto-fit</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section class="intro">
+          <h2>Grid Layout Nedir?</h2>
+          <p>
+            CSS Grid, iki boyutlu (satır ve sütun) layout sistemidir.
+            Flexbox'tan daha güçlü ve karmaşık layout'lar için idealdir.
+          </p>
+        </section>
+
+        <!-- Grid Cards Section -->
+        <section class="cards-section">
+          <h2>Grid ile Kart Dizilimi</h2>
+
+          <div class="cards-grid">
+            <article class="card">
+              <div class="card-icon">📱</div>
+              <h3>Responsive</h3>
+              <p>
+                Grid ile responsive tasarım çok kolay. Sütun sayısı otomatik
+                ayarlanır.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">🎯</div>
+              <h3>Kolay Hizalama</h3>
+              <p>
+                Öğeleri istediğin gibi hizalayabilirsin. Merkeze almak çok
+                basit.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">⚡</div>
+              <h3>Hızlı Geliştirme</h3>
+              <p>
+                Grid ile karmaşık layout'ları çok daha hızlı oluşturabilirsin.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">🎨</div>
+              <h3>Esnek Tasarım</h3>
+              <p>fr birimi ile esneklik sağla. Boşlukları otomatik dağıt.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">📐</div>
+              <h3>Grid Areas</h3>
+              <p>grid-template-areas ile layout'u görsel olarak tanımla.</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">🔧</div>
+              <h3>Gap Özelliği</h3>
+              <p>Öğeler arası boşluk için margin'e gerek yok. gap kullan!</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Feature Box -->
+        <section class="feature-box">
+          <h3>💡 İpucu</h3>
+          <p>
+            Tarayıcıyı küçültüp büyüterek grid'in nasıl responsive olduğunu
+            görelim!
+          </p>
+        </section>
+      </main>
+
+      <!-- Footer -->
+       <footer class="footer">
+        <p>@ 2025 CSS Grid Demo | Ondiacademy FS-DE-11-TR</p>
+       </footer>
+    </div>
+  </body>
+</html>

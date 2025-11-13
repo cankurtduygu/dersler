@@ -1,0 +1,46 @@
+.box{
+
+    border:5px solid black;
+    margin-bottom: 4rem;
+    width: 20rem;
+    height: 4rem;
+    background-color: bisque;
+}
+
+.box1{
+    overflow: visible;
+}
+
+.box2{
+margin-top:10rem;
+    overflow: hidden;
+}
+.box2:hover{
+    overflow: visible;
+}
+.box3{
+
+    overflow: scroll;
+    /* overflow-y: scroll; */
+ 
+}
+
+.box4{
+    overflow: auto;
+
+    /* yatayda yada dikeyde nerede ihtiyaç varsa orada scroll çıkarır */
+}
+
+.par1{
+    background-color: coral;
+    width: 40rem;
+}
+
+.box5{
+    overflow: auto;
+}
+
+.box3::-webkit-scrollbar{
+/* ekrandaki scroll görüntüsünü kaybet */
+    display:none;
+}

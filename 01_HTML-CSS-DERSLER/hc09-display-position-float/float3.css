@@ -1,0 +1,49 @@
+img{
+
+    float:left;
+
+    margin-left: 5px;
+}
+
+.par1{
+    background-color: blueviolet;
+}
+.par2{
+    background-color: rgb(43, 226, 131);
+}
+
+.clear{
+    clear:both;
+}
+
+.container{
+    border:2px solid red;
+}
+
+.box1{
+    background-image: url("https://picsum.photos/id/284/600/400");
+    height: 100px;
+    width: 33%;
+    float:left;
+}
+
+.box2{
+
+    background-color: yellow;
+ height: 150px;
+    width: 33%;
+float: left;
+}
+.box3{
+
+    background-image:url("https://picsum.photos/id/250/600/400") ;
+    background-position: center;
+    background-size: cover;
+     height: 200px;
+    width: 33%;
+    float: left;
+}
+/* .son{
+    background: blue;
+    width: 50%;
+} */

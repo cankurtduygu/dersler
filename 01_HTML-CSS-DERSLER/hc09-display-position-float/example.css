@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(#a9c9ff, #ffbbec);
+
+  padding: 1rem;
+}
+
+.header {
+  float: right;
+
+  padding-top: 10px;
+  padding-right: 0.5rem;
+}
+
+.header a {
+  color: maroon;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav.sticky {
+  background-image: linear-gradient(#fee140, #fa709a);
+  padding: 2rem;
+  text-align: center;
+}
+nav.sticky a {
+  text-decoration: none;
+
+  color: black;
+
+  margin: 0.8rem;
+}
+
+nav.reklam {
+  /* border:2px solid red; */
+  position: relative;
+}
+
+nav.reklam img {
+  width: 100%;
+  height: calc(100vh - 165px);
+  /* ekran boyunun tamamından 165px eksik kullan */
+}
+
+nav.reklam .reklam-info {
+  /* background-color: yellow; */
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+button {
+  background-color: rgb(213, 51, 51);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  margin-top: 5px;
+}
+main{
+    text-align:justify;
+}

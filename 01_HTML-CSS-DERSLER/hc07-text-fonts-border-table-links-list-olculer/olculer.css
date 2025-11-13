@@ -1,0 +1,61 @@
+
+*{
+    /* margin:0; */
+
+}
+
+.dede{
+   background-color:  orange;
+    width:50%;
+
+
+}
+
+.baba{
+    background-color:  red;
+    width:50%;
+   
+}
+.torun{
+   background-color:  aqua; 
+   width:50vw;
+}
+/*! viewport ölçüleri tüm ekranı baz alır, mesela 50vw dersek tüm 1400px lik pc ekranımı baz alır ve 700 px olur. 50% ise body nin 16px lik default margin lerinden arta kalan kısmın yüzde 50 sini alır bu yüzden % ler parent ı önemser, her zaman parent tan gelen ölçünün yüzdesini alır ama viewportlar her durumda ekranın yüzdesini alır */
+
+
+
+.tek{
+
+    font-size:4.5em
+/* 16*4.5=72px */
+}
+
+
+.anane{
+color:red;
+font-size:3em;
+/* 3*16=48px */
+}
+/* buraya atasından 1em=48px olarak geldi */
+.anne{
+
+    font-size:0.5em;
+/* 48*0.5=24px */
+
+}
+/* buraya atasından 1em=24px olarak geldi */
+.cocuk{
+font-size:3em;
+/* 24*3=72px */
+}
+
+/*! rem için parent child yok ana element e göre default 16px alır. 1rem=body nin px line eşittir. bu da defaultta 16px dir  */
+.div1{
+    font-size:2rem;
+    /* 16*2=32px */
+}
+
+.div2{
+    font-size: 2rem;
+    /* 16*2=32px */
+}

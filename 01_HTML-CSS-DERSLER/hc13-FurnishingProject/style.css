@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
+@import "../hc14-mediaQuery_variables/variable.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: "Judson", serif;
+}
+
+.container {
+  border: 1px solid red;
+  width: 80%;
+  margin: 50px auto;
+
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 10px black;
+  overflow: hidden;
+}
+
+/*! ICONBAR */
+
+.iconbar {
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px 50px;
+}
+
+.input-part {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-part > img {
+  width: 50px;
+  height: 50px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 15px;
+  margin: 1rem;
+}
+
+.select-category select {
+  width: 188px;
+  height: 40px;
+  background-color: #d9d9d9;
+
+  font-family: "Bellota", system-ui;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.search-input {
+  border: 1px solid orange;
+  width: 300px;
+  height: 40px;
+  background-color: #d9d9d9;
+  margin-left: 1rem;
+
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input input {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.support {
+  margin-left: 1rem;
+}
+
+.support .number {
+  font-size: 1.5rem;
+}
+
+.icon {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/*! NAVBAR */
+
+.navbar {
+  /* border:1px solid orange; */
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+  gap: 2rem;
+}
+
+.button {
+  border: 1px solid orange;
+  font-style: italic;
+  background-color: #d9d9d9;
+  width: 310px;
+  height: 45px;
+  padding: 1rem;
+
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+/*! HEADER */
+
+header {
+  background-image: url(./images/stock.jpg);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem 5rem;
+  gap: 1rem;
+}
+
+.light-blue {
+  border: 1px solid blue;
+  background-color: #d5dee5;
+  box-shadow: 5px 5p 10px black;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.light-blue .text {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+.light-blue .sofa img {
+  width: 150px;
+}
+
+.yellow {
+  background-color: #ffc868;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+}
+.yellow p {
+  width: 80%;
+  padding: 1rem;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+.yellow img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/*! CATEGORY */
+
+.categoryPart {
+  background-color: #a09382;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.categories {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  /* border: 1px solid pink; */
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  padding: 1rem 1px 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px black;
+  font-family: "Josefin Slab", serif;
+  background-color: #e5e2df;
+}
+
+.card1 img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1px 1rem 1rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/*! PRODUCTS */
+
+.productPart{
+    background-color: #eeecec;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.products{
+/* border:1px solid blue; */
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+.card2{
+width: 20rem;
+height: 20rem;
+/* border:1px solid red; */
+margin: 1rem;
+text-align: center;
+box-shadow: 1px 1px 10px black;
+border-radius: 1rem;
+
+}
+
+.card2 img{
+border-radius:inherit ;
+    width: 100%;
+height: 90%;
+object-fit: cover;
+}
+
+/*! CONTACT */
+.contact{
+    border:1px solid orange;
+    background-color: #aea08d;
+    padding:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    /* padding: 1rem; */
+}
+
+.expert{
+
+width: 50%;
+
+
+}
+
+.expert  .first {
+    font-family: "Bellota", system-ui;
+    font-size:2rem
+}
+.expert .second{
+    line-height: 1.5;
+}
+span{
+    color:orange;
+}
+
+.formSection{
+    width: 40%;
+    /* background-color: orange; */
+
+    font-size: 1.8rem;
+}
+
+.formSection div{
+    margin:1.5rem 0
+}
+
+.formSection input{
+width: 100%;
+padding: 0.5rem 0;
+border:none;
+border-bottom:1px solid black;
+
+background-color: inherit;
+
+}
+
+/* inputa gelindiğinde focuslandığında */
+.formSection input:focus{
+
+    outline:none;
+
+    background-color: #7f7261;
+}
+
+.submit{
+
+padding: 1rem;
+border-radius: 5px;
+
+width: 13rem;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-style: italic;
+font-size:1rem;
+margin-left:1rem;
+border:1px solid black
+
+}
+
+
+/*! FOOTER */
+
+footer{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.policy a {
+    color:black;
+    text-decoration: none;
+    border-bottom:1px solid black;
+    margin-right: 1rem;
+
+}

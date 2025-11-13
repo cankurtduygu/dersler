@@ -1,0 +1,247 @@
+/* Genel stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00416A;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+h2{
+    color: #667eea;
+    margin: 30px 0 20px;
+    border-bottom: 3px solid #667eea;
+}
+
+/* Temel kutu stilleri */
+.box {
+    width: 150px;
+    height: 150px;
+    background: #71f703e8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* ========== Transfrom Ornekleri ========== */
+
+.rotate-box:hover {
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    transform: rotate(45deg);
+}
+
+.scale-box:hover {
+    /* transform: scale(1); scale(1) default ozellik */
+    /* transform: scaleX(1.3);  */
+    /* transform: scaleY(1.3);  */
+    transform: scale(1.3);
+}
+
+.translate-box:hover{
+    /* 
+    Kısa cevap: translate() içindeki yüzde değerleri, elemanın kendi boyutuna göre hesaplanır — translateX(50%) = elemanın genişliğinin %50'si, translateY(50%) = elemanın yüksekliğinin %50'si.
+    */
+    /* transform: translateX(100px); */
+    /* transform: translateY(50px); */
+    transform: translate(100px, 50px);
+}
+
+.skew-box:hover{
+    /* transform: skewX(20deg); */
+    /* transform: skewY(20deg); */
+    transform: skew(20deg, 20deg);
+}
+
+/* ========== Transition Ornekleri ========== */
+
+.ease-box{
+    transition: width 2s ease; /*default transition-timing-function - ease*/
+}
+
+.ease-box:hover{
+    width: 400px;
+}
+
+.ease-in-box{
+    transition: width 2s ease-in;
+}
+
+.ease-in-box:hover{
+    width: 400px;
+}
+
+.ease-out-box{
+    transition: width 2s ease-out;
+}
+
+.ease-out-box:hover{
+    width: 400px;
+}
+
+.ease-in-out-box{
+    transition: width 2s ease-in-out;
+}
+
+.ease-in-out-box:hover{
+    width: 400px;
+}
+
+.transition-color{
+    background: #667eea;
+    /* transition: width 2s ease, background-color 3s ease-in-out; */
+    transition: all 2s ease;
+}
+
+.transition-color:hover{
+    width: 400px;
+    background-color: brown;
+}
+
+.transition-multiple{
+    /* background: #30ca30; */
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+
+    transition: all 1s ease;
+}
+
+.transition-multiple:hover{
+    background: hotpink;
+    transform: rotate(180deg) scale(1.2);
+    /* transform: scale(1.2); */
+    border-radius: 50%;
+}
+
+/* ========== Animation Ornekleri ========== */
+
+@keyframes spin {
+    from { transform: rotate(0deg)}
+
+    to {transform: rotate(360deg)}
+}
+
+.spin-box{
+    background: red;
+    /* animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    animation: spin  2s linear infinite;
+}
+
+
+@keyframes bounce {
+    /* 0% { transform: translateY(0);}
+    50% { transform: translateY(-50px);}
+    100% { transform: translateY(0);} */
+    0% , 100% { transform: translateY(0);}
+    50% { transform: translateY(-50px);}
+}
+
+.bounce-box{
+    background: #3498db;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes colorChange {
+    0% {background: blue;}
+    25% {background: yellow;}
+    50% {background: pink;}
+    75% {background: brown;}
+    100% {background: orange;}
+}
+
+.color-change-box{
+    animation: colorChange 4s ease-in-out infinite;
+}
+
+@keyframes pulse{
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        background: brown;
+    }
+}
+
+.pulse-box{
+    border-radius: 50%;
+    /* width: 50px;
+    height: 50px; */
+    animation: pulse 1.5s ease-out infinite
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateX(100px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.slide-box{
+    animation: slide 3s ease-in infinite;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.shake-box {
+    animation: shake 0.8s ease-in-out infinite;
+    background: #e67e22;
+}
+

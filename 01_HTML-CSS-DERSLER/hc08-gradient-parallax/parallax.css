@@ -1,0 +1,16 @@
+.bg {
+  height: 70vh;
+
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: top center;
+/* parallax efectini alttaki kod veri */
+  background-attachment:fixed;
+}
+.div1 {
+  background-image: url("../hc08-Survey_Form/img/monalisa.jpeg");
+}
+
+.div2 {
+  background-image: url("https://cdn.pixabay.com/photo/2022/07/15/20/13/strawberries-7323943__480.jpg");
+}

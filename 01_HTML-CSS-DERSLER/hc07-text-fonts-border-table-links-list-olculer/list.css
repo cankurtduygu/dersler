@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Climate+Crisis:regular);
+
+* {
+  font-family: "Climate Crisis";
+}
+
+.aktif {
+  background-color: lightgreen;
+}
+
+li {
+  background-color: gray;
+
+  color: red;
+}
+a {
+  color: pink;
+}
+
+/* li lere verilen stilden a lar etkilenmez, a lar özel ilgi ister */
+
+ul {
+  list-style-type: disc;
+  list-style-type: square;
+  list-style-type: circle;
+  /* list-style-type: "🌈"; */
+  /* list-style-type: none; */
+
+  list-style-position:inside;
+}
+/* li:nth-child(2n){
+
+  list-style-type: "🌈";  
+} */
+
+.aktif:hover{
+    background-color: purple;
+}

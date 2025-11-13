@@ -1,0 +1,87 @@
+main{
+    background-color: aqua;
+    padding: 5px;
+    margin: 0 auto 1000px;
+    position: relative;
+    /* ana div e (kapsayıcı dive) position:relative vererek çocuklarına akıştan çıkıp pozisyon verilebilmesini sağlıyoruz */
+}
+
+.box1{
+    background-color: purple;
+    color:white;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top:10px;
+    left:10px;
+    /* ilk çocuğa relative vererek akıştan çık ve olman gereken yerden 10 yukardan  in 10 soldan kay dedik */
+}
+
+.box2{
+    background-color: green;
+     width: 100px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    right:0;
+    /* 2.çocuğa absolute vererek, akıştan çık babanın alanında yukarı ve sağa sıfırlan dedik */
+}
+.box3{
+    background-color: yellow;
+     width: 100px;
+    height: 100px;
+
+    position: fixed;
+    bottom:20px;
+    right:0;
+    /* 3.çocuğa fixed vererek akıştan çık ekranın sağına yapış, ekran hareket ettirilse bile orada kal */
+}
+
+
+.icerde{
+    background-color: pink;
+
+    width: 30px;
+    height: 30px;
+    width: 50px;
+    height: 50px;
+    /* ölçüler babasının tam yarısı olursa yüzde 50 kay deyince, istenilen yere sıfırlanmış olur */
+    position: absolute;
+    top:50%;
+    left: 50%;
+   
+}
+
+
+
+.par1{
+    background-color: pink;
+    padding: 10px;
+
+    position: sticky;
+
+    top:35px;
+   
+z-index:7
+
+}
+
+.par2{
+    background-color: gray;
+    padding: 10px;
+position: relative;
+ /* gri paragrafı mavi parent ından kopardım pc min camına yapıştırmışım gibi */
+z-index:10
+}
+nav{
+    background-color: orange;
+    padding: 10px;
+    position: sticky;
+    top:0;
+    z-index:3
+   
+}
+a{
+    color:red;
+
+}
