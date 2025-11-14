@@ -170,6 +170,18 @@ console.log(`Boolean([1,2,3]) ${Boolean('Merhaba ch11')}`);
 
 
 // || (veya)  -> ilk true degerini döner
+console.log(0 || 1);
+
+const varsayilanIsim = "" || "Misafir";
+console.log(`´Hos geldin, ${varsayilanIsim}`);
+
+
+const kullaniciPuani = 0 || 85 || 100
+console.log(`Puan: ${kullaniciPuani}`);
+
+const email = " " || null || `user@test.com` || `default@test.com`
+console.log(`Email: ${email}`);
+
 
 
     
