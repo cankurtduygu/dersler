@@ -162,6 +162,16 @@ console.log(`18 yasindan kucuk mu ? ${userYas < minYas }`);
 const urunStok = 20;
 console.log(`Urun stokta var mi ? ${urunStok !== 0}`);
 
+
+console.log(`Boolean(5) ${Boolean(5)}`);
+console.log(`Boolean(-5) ${Boolean(5)}`);
+console.log(`Boolean([1,2,3]) ${Boolean('Merhaba ch11')}`);
+
+
+
+// || (veya)  -> ilk true degerini döner
+
+
     
     
     
